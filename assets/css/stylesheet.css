@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+/*GENERAL DESIGN : Header, Title, Footer, ...*/
+.nav-buttons{
+    margin-left: 60%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+h5{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h6{
+color: blanchedalmond;
+}
+
+button{
+    font-size: 0.8rem;
+    font-weight: 900;
+    outline: none;
+    border: none;
+    background-color: yellowgreen;
+    color: white;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+button:hover{
+    background-color: red;
+}
+
+
+/*PRECISE CLASS*/
+
+.navbar{
+    font-size: 20px;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav .navbar-link{
+    padding: 0 20px;
+    color: red;
+    transition: 0.4 ease;
+}
+
+.navbar .navbar-nav .navbar-link:hover,
+.navbar i:hover,
+.navbar .navbar-nav .navbar-link.active
+.navbar i:hover{
+    color: greenyellow;
+}
+
+.navbar i{
+    font-size: 1.2rem;
+    padding: 0 0.7px;
+    transition: 0.4s ease;;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:990px) {
+    .nav-buttons{
+        margin: 10px;
+    }   
+
+    .nav-buttons ul{
+        margin: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .nav-buttons ul .fa{
+        margin: 20px 10px 10px 10px;
+    }
+}
+
+#home{
+    background-image: url('../imgs/D47A8091.webp');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+#home span{
+    color: red;
+}
+
+#new .one img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#new .one{
+    position: relative;
+}
+
+#new .one .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: red;
+    font-weight: bold;
+    transition: 0.4s ease;
+    opacity: 0.6;
+    background-color: black;
+    width:  100%;
+    height: 100%;
+}
+
+#new .one .details:hover{
+    background-color: rgb(247, 247, 191);
+}
+
+#new .one:nth-child(1) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+
+#new .one:nth-child(2) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#new .one:nth-child(3) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
+
